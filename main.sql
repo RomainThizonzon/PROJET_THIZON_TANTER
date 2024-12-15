@@ -1,6 +1,3 @@
-CREATE USER ldc IDENTIFIED BY motdepasse;
-GRANT ALL PRIVILEGES TO ldc;
-
 CREATE TABLE Teams (
     team_id NUMBER PRIMARY KEY,
     team VARCHAR2(100) NOT NULL,
@@ -11,7 +8,7 @@ CREATE TABLE Teams (
 CREATE TABLE Players (
     player_id NUMBER PRIMARY KEY,
     name VARCHAR2(50) NOT NULL,
-    nationality VARCHAR2(30),
+    nationality VARCHAR2(30 ),
     field_position VARCHAR2(30),
     position VARCHAR2(30),
     weight NUMBER,
